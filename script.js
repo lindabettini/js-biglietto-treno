@@ -37,4 +37,14 @@ let finalPrice = totalPrice.toFixed(2);
 console.log(totalPrice);
 console.log(finalPrice);
 
+// Recupero elementi da sampare in pagina
+const kmElement = document.getElementById('km');
+const ageElement = document.getElementById('age');
+const priceElement = document.getElementById('price');
+
+// Stampo in pagina
+kmElement.innerHTML = `Chilometri biglietto: ${kmRun}`;
+ageElement.innerHTML = `Et&agrave; passeggero: ${passengerAge}`;
+priceElement.innerHTML = `Prezzo: € ${finalPrice}`;
+
 
