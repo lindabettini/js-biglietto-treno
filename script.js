@@ -40,5 +40,3 @@ const priceElement = document.getElementById('price');
 kmElement.innerHTML = `Chilometri biglietto: ${kmRun}`;
 ageElement.innerHTML = `Et&agrave; passeggero: ${passengerAge}`;
 priceElement.innerHTML = `Prezzo: € ${finalPrice}`;
-
-
