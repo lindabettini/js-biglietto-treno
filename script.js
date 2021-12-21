@@ -17,15 +17,22 @@ const passengerAge = parseInt(prompt('Quanti anni hai?'));
 console.log(passengerAge);
 
 //Definire sconti
-const minor = 20
-const over65 = 40
+function calculateDiscount(total, percentage) {
+        
+    var discountValue = (total / 100) * percentage;
+    var finalPrice = total - discountValue;
+    
+    return finalPrice.toFixed(2);
+}
+const minor = 20;
+const over65 = 40;
 
 // Calcolare il prezzo totale del viaggio
 let price = kmRun * 0.21;
 
 if (passengerAge < 18){
-    let price: calcolaPerc(fullPrice,minor);
+    let price: calculateDiscount(price,minor);
   
 }
 
-console.log('il costo totale è di: €', 'price')
+console.log('il costo totale è di: €', 'price');
