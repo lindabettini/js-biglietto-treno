@@ -10,15 +10,12 @@ il prezzo del biglietto è definito in base ai km (0.21 € al km).
 
 // Chiedere all'utente quanti km vuole percorrere
 const kmRun = parseInt(prompt('Quanti chilometri vuoi percorrere?')); 
-console.log(kmRun);
 
 // Chiedere eta' all'utente 
 const passengerAge = parseInt(prompt('Quanti anni hai?')); 
-console.log(passengerAge);
 
 // Calcolare il prezzo totale del viaggio
 let totalPrice = kmRun * 0.21;
-
 
 // Calcolare eventuali sconti del viaggio
 let discountValue = 0;
@@ -33,9 +30,6 @@ if (passengerAge < 18){
 
 // Arrotondare prezzo finale 
 let finalPrice = totalPrice.toFixed(2);
-
-console.log(totalPrice);
-console.log(finalPrice);
 
 // Recupero elementi da sampare in pagina
 const kmElement = document.getElementById('km');
