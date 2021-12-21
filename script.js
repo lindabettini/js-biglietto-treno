@@ -18,11 +18,11 @@ console.log(passengerAge);
 
 // Calcolare il prezzo totale del viaggio
 let totalPrice = kmRun * 0.21;
-let FinalPrice = totalPrice.toFixed(2);
 
-let discountValue = 0;
 
 // Calcolare eventuali sconti del viaggio
+let discountValue = 0;
+
 if (passengerAge < 18){              
         discountValue = (totalPrice / 100) * 20;
         totalPrice = totalPrice - discountValue;
@@ -31,6 +31,10 @@ if (passengerAge < 18){
     totalPrice = totalPrice - discountValue;
 }
 
+// Arrotondare prezzo finale 
+let finalPrice = totalPrice.toFixed(2);
+
 console.log(totalPrice);
+console.log(finalPrice);
 
 
