@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Noto Serif", serif;
 }
 
 .container {
@@ -32,6 +32,6 @@ body {
 #quote-details {
   list-style: none;
   text-align: center;
-  color: rgb(187, 39, 60);
   font-weight: bold;
+  color: rgb(42, 44, 50);
 }
