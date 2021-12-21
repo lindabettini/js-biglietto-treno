@@ -22,6 +22,7 @@ let FinalPrice = totalPrice.toFixed(2);
 
 let discountValue = 0;
 
+// Calcolare eventuali sconti del viaggio
 if (passengerAge < 18){              
         discountValue = (totalPrice / 100) * 20;
         totalPrice = totalPrice - discountValue;
