@@ -21,9 +21,9 @@ let totalPrice = kmRun * 0.21;
 let discountValue = 0;
 
 if (passengerAge < 18){              
-        discountValue = (totalPrice / 100) * 20;
-        totalPrice = totalPrice - discountValue;
-} else if (passengerAge > 65){              
+    discountValue = (totalPrice / 100) * 20;
+    totalPrice = totalPrice - discountValue;
+}   else if (passengerAge > 65){              
     discountValue = (totalPrice / 100) * 40;
     totalPrice = totalPrice - discountValue;
 }
